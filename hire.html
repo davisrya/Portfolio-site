@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hire</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+
+    :root {
+        --primary-color: aliceblue;
+        --secondary-color: Black;
+    }
+
+    .dark-theme{
+        --primary-color: black;
+        --secondary-color: white;
+    }
+
+    #icon {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        flex: 1;
+        text-align: right;
+    }
+
+    .hero{
+        height: 100vh;
+        width: 100%;
+        background-color: var(--primary-color);
+        font-family: sans-serif;
+        position: relative;
+    }
+
+    nav{
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    nav ul li a:hover {
+        color: orangered;
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <!--make a copy for portfolio-->
+                <!--link the link of nav bar-->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PROJECTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="hire.html">HIRE ME</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+        </div>
+    
+    
+
+
+
+
+
+
+
+
+        <script>
+            const icon = document.getElementById("icon");
+    
+    icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "images/sun.png";
+    }else{
+        icon.src = "images/moon.png";
+    }
+    }
+    </script>
+</body>
+</html>

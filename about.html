@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>About</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+
+    :root {
+        --primary-color: rgb(200, 221, 240);
+        --secondary-color: Black;
+    }
+
+    .dark-theme{
+        --primary-color: black;
+        --secondary-color: white;
+    }
+
+    #icon {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        flex: 1;
+        text-align: right;
+    }
+
+    .hero{
+        height: 100vh;
+        width: 100%;
+        background-color: var(--primary-color);
+        font-family: sans-serif;
+        position: relative;
+    }
+
+    nav{
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    nav ul li a:hover {
+        color: orangered;
+    }
+
+    .about {
+        text-align: center;
+        margin-top: 80px;
+        border: 2px solid lightblue;
+        width: 800px;
+        margin-left: 400px;
+        border-radius: 10px;
+        color: white;
+        background-color: #007FFF;
+        font-family: cursive;
+    }
+
+    span {
+        color: black;
+    }
+
+    .flex-container {
+        width: 100%;
+        height: auto;
+        display: flex;  
+        font-family: cursive;
+        
+    }
+
+    .flex-box {
+        width: 300px;
+        height: 200px;
+        background-color: silver;
+        border-radius: 10px;
+        margin: 10px;
+        border: 2px solid #003153;
+        transition: transform 450ms;
+        cursor: pointer;
+    }
+
+    .flex-box:hover {
+        transform: scale(1.08);
+    }
+   
+ 
+
+
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <!--make a copy for portfolio-->
+                <!--link the link of nav bar-->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PROJECTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="hire.html">HIRE ME</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+        <div class="about">
+            <h1>I'm <span>Brian Kija</span></h1>
+            <p>I'm software developer i have experience in Development for 1 years, </p>
+            <p>So let's Introduce my self.</p>
+        </div>
+        <div class="flex-container">
+            <div class="flex-box" style="margin-left: 300px;">
+                <h2 style="text-decoration: underline; text-align: center; margin-top: 10px;">SKILLS</h2>
+                <dl style="margin-left: 10px;">
+                    <dt><h3>Web Development</h3></dt>
+                    <dd>- HTML,CSS,JS & PHP</dd>
+                    <dt><h3>App Development</h3></dt>
+                    <dd>- JS,CSS,HTML & PHP</dd>
+                    <dt><h3>UI/UX Designer</h3></dt>
+                    <dd>- HTML,CSS, & JS</dd>
+                </dl>
+            </div>
+            <div class="flex-box">
+                <h2 style="text-decoration: underline; text-align: center; margin-top: 10px;">EXPERIENCE</h2>
+                <dl style="margin-left: 10px;">
+                    <dt><h3>UDSM,COICT</h3></dt>
+                    <dd>- 1 Year</dd>
+                    <dt><h3>As Freelancer</h3></dt>
+                    <dd>- 1 Year</dd>
+                    <dt><h3>K17-Company</h3></dt>
+                    <dd>- 1 Year 6 Months</dd>
+                </dl>
+            </div>
+            <div class="flex-box">
+                <h2 style="text-decoration: underline; text-align: center; margin-top: 10px;">EDUCATION</h2>
+                <dl style="margin-left: 10px;">
+                    <dt><h3>UDSM,COICT</h3></dt>
+                    <dd>- 2023-2024</dd>
+                    <dt><h3>O-LEVEL</h3></dt>
+                    <dd>- 2019-2023</dd>
+                    <dt><h3>PRIMARY-EDUCATION</h3></dt>
+                    <dd>- 2012-2018</dd>
+                </dl>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+        <script>
+            const icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    document.body.classList.toggle("dark-theme");
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "images/sun.png";
+    }else{
+        icon.src = "images/moon.png";
+    }
+}
+        </script>
+</body>
+</html>

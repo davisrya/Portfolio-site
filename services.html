@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Services</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+
+    :root {
+        --primary-color: rgb(200, 221, 240);
+        --secondary-color: Black;
+    }
+
+    .dark-theme{
+        --primary-color: black;
+        --secondary-color: white;
+    }
+
+    #icon {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        flex: 1;
+        text-align: right;
+    }
+
+    .hero{
+        height: 100vh;
+        width: 100%;
+        background-color: var(--primary-color);
+        font-family: sans-serif;
+        position: relative;
+    }
+
+    nav{
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    nav ul li a:hover {
+        color: orangered;
+    }
+
+    .about {
+        text-align: center;
+        margin-top: 80px;
+        border: 2px solid lightblue;
+        width: 800px;
+        margin-left: 400px;
+        border-radius: 10px;
+        color: white;
+        background-color: #007FFF;
+        font-family: cursive;
+    }
+
+    span {
+        color: black;
+    }
+
+    .flex-container {
+        width: 100%;
+        height: auto;
+        display: flex;  
+        font-family: cursive;
+    }
+
+    .flex-box {
+        width: 300px;
+        height: 200px;
+        background-color: #007FFF;
+        border-radius: 10px;
+        margin: 10px;
+        border: 2px solid #003153;
+        transition: transform 450ms;
+        cursor: pointer;
+    }
+
+    .flex-box:hover {
+        transform: scale(1.08);
+    }
+   
+
+
+</style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <!--make a copy for portfolio-->
+                <!--link the link of nav bar-->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PROJECTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="hire.html">HIRE ME</a></li>
+            </ul>
+            <img src="images/moon.png" id="icon">
+        </nav>
+        
+        <div class="about">
+            <h1>As <span>Software Developer</span></h1>
+            <p>This are services that are provide due to the experience i have for the long time, </p>
+            <p>As flow-chart show.</p>
+        </div>
+        <div class="flex-container">
+            <div class="flex-box" style="margin-left: 300px;">
+                <h2 style="text-decoration: underline; text-align: center; margin-top: 10px;">WEB DEVELOPMENT</h2>
+                <p>I provide services in web development, </p>
+                <p>AS building web app and website. </p>
+                <p>Also i can manage data user, </p>
+                <p>And provide web app or website security.</p>
+            </div>
+            <div class="flex-box">
+                <h2 style="text-decoration: underline; text-align: center; margin-top: 10px;">UI/UX DESIGN</h2>
+                <p>Also i have specialed in website design</p>
+                <p>I create a website to be more approachable,</p>
+                <p>to the User.</p>
+                <p>Also manage User-interaction.</p>
+            </div>
+            <div class="flex-box">
+                <h2 style="text-decoration: underline; text-align: center; margin-top: 10px;">MOBILE-DEVELOPMENT</h2>
+                <p>I create mobile app Individual or </p>
+                <p>Company that & I based on both side</p>
+                <p>Frontend side and backend side</p>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+
+    <script>
+        const icon = document.getElementById("icon");
+
+icon.onclick = function(){
+document.body.classList.toggle("dark-theme");
+if(document.body.classList.contains("dark-theme")){
+    icon.src = "images/sun.png";
+}else{
+    icon.src = "images/moon.png";
+}
+}
+</script>
+</body>
+</html>

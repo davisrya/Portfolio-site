@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sample</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    }
+
+    :root {
+        --primary-color: aliceblue;
+        --secondary-color: Black;
+    }
+
+    .dark-theme{
+        --primary-color: black;
+        --secondary-color: white;
+    }
+
+    #icon {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    nav ul {
+        flex: 1;
+        text-align: right;
+    }
+
+    .hero{
+        height: 100vh;
+        width: 100%;
+        background-color: var(--primary-color);
+        font-family: sans-serif;
+        position: relative;
+    }
+
+    nav{
+        width: 84%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 100px;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: var(--secondary-color);
+    }
+
+    nav ul li a:hover {
+        color: orangered;
+    }
+
+    .load {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .log {
+        display: flex;
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+    
+    .explain {
+        width: 250px;
+        height: 200px;
+        margin-left: 100px;
+        margin-top: 50px;
+        font-family: cursive;
+    }
+
+    .explain a {
+        text-decoration: none;
+        background-color: #007FFF;
+        color: white;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .demo {
+        width: 100px;
+        height: 35px;
+        background-color: #007FFF;
+        border: 2px solid #003153 ;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 450ms;
+    }
+
+     .demo:hover {
+        transform: scale(1.08);
+    }
+
+    .box1 {
+        transition: transform 450ms;
+    }
+
+    .box1:hover {
+        transform: scale(1.08);
+    }
+
+    span {
+        color: orangered;
+        text-decoration: underline;
+        font-size: 20px;
+    }
+
+
+    .verify {
+        width: 250px;
+        height: 200px;
+        margin-left: 10px;
+        margin-top: 50px;
+        font-family: cursive;
+    }
+
+    .verify a {
+        text-decoration: none;
+        background-color: #007FFF;
+        color: white;
+        margin-top: 50px;
+        font-size: 20px;
+    }
+
+    .aport {
+        width: 100px;
+        height: 35px;
+        background-color: #007FFF;
+        border: 2px solid #003153 ;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 450ms;
+    }
+
+     .aport:hover {
+        transform: scale(1.08);
+    }
+
+    .all {
+        background-color: aliceblue;
+    }
+
+</style>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <!--make a copy for portfolio-->
+                <!--link the link of nav bar-->
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="portfolio.html">PROJECTS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="hire.html">HIRE ME</a></li>
+            </ul>
+        </nav>
+        <h1 style="color: #007FFF; margin-left: 200px;">PORTFOLIO</h1>
+        <div class="load"><h1>-Each project is a unique piece of development</h1></div>
+        <div class="log">
+            <div class="lead">
+                <div class="box1">
+                    <img src="login.png" width="390px" height="350px">
+                </div>
+            </div>
+            <div class="explain">
+                <p>This one of the system that is for <span>Register</span> and <span>logIn</span></p>
+                <p>Here User can create <span> Account </span>and can be able to logIn</p>
+                <div class="demo">
+                <a href="https://davisrya.github.io/Login-Form/">live demo</a>
+                </div>
+            </div>
+        </div>
+        <!--verify-->
+        <div class="all">
+        <div class="log">
+            <div class="verify">
+                <p>This the system for <span>Registered</span> before start use<span>System</span></p>
+                <p>Is  using during apply for <span> Visa </span>and it helpful capturenin personal Information such as birthdate</p>
+                <div class="aport">
+                <a href="">live demo</a>
+                </div>
+            </div>
+            <div class="lead">
+                <div class="box1">
+                    <img src="registration.png" width="300px" height="300px" style="margin-left: 100px;">
+                </div>
+            </div>
+        </div>
+        <!--quiz app-->
+        <div class="log">
+            <div class="lead">
+                <div class="box1">
+                    <img src="simple.png" width="400px" height="350px">
+                </div>
+            </div>
+            <div class="explain">
+                <p>This is the Game for testing <span>Brain</span> and <span>Amusement</span></p>
+                <p>User can play while<span> Relaxing </span>and Improve is knowledge</p>
+                <div class="demo">
+                <a href="">live demo</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+</body>
+</html>
